@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".SettingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbar"
+                    app:theme="@style/ToolBarStyle"/>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general"
+                    android:textSize="25sp"
+                    android:textColor="@color/btn_primary_light"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_primary_light" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/switch_sound"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_switch_sound_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/enable"
+                            android:textColor="@color/light_gray"
+                            android:textSize="19sp"
+                            android:typeface="monospace"/>
+
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_swithc_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:layout_gravity="center_vertical"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/turn_on_at_startup"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_toas_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/enable"
+                            android:textColor="@color/light_gray"
+                            android:textSize="19sp"
+                            android:typeface="monospace"/>
+
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_toas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:layout_gravity="center_vertical"
+                        tools:ignore="RtlHardcoded" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/turn_off_at_exit"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_toae_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/enable"
+                            android:textColor="@color/light_gray"
+                            android:textSize="19sp"
+                            android:typeface="monospace"/>
+
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_toat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:layout_gravity="center_vertical"
+                        tools:ignore="RtlHardcoded" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textSize="25sp"
+                    android:textColor="@color/btn_primary_light"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_primary_light" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/flashlight"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_version"
+                            android:textColor="@color/light_gray"
+                            android:textSize="19sp"
+                            android:typeface="monospace"/>
+
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voice Commands"
+                    android:textSize="23sp"
+                    android:textColor="@color/btn_primary_light"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_primary_light" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="10dp">
+                <!-- table header-->
+
+                <!--table rows-->
+                <TableRow
+                    android:padding="5dp"
+                    android:background="@drawable/ic_launcher_background">
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="Light On :"/>
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="For on the light"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_launcher_background">
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="Light Off :"/>
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="For off the light"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_launcher_background">
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="Stop :"/>
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="Stop the Voice Recognition"
+                        />
+                </TableRow>
+
+
+                <TableRow
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_launcher_background">
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="Exit app :"/>
+                    <TextView
+                        style="@style/bmi_rows"
+                        android:text="For exit the app"
+                        />
+                </TableRow>
+
+
+
+
+            </TableLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

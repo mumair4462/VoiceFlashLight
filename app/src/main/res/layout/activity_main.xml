@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_settings"
+                android:onClick="gotoSetting"
+                tools:ignore="UsingOnClickInXml"
+                android:id="@+id/setting"/>
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/setting"
+                android:layout_marginTop="40dp"
+                android:id="@+id/main_container"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_lightstatus"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/ic_flashlight_on" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_lightstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="30dp"
+                    android:letterSpacing="0.07"
+                    android:text="@string/light_status"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:fontFamily="sans-serif" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:backgroundTint="@color/btn_primary_dark"
+                    app:cardCornerRadius="360dp"
+                    app:cardElevation="8dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_lightstate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/btn_primary_dark"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/light_on" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_marginTop="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/voice_recognition"
+                        android:textColor="@color/btn_primary_light"
+                        android:textSize="20sp"
+                        android:textStyle="italic"/>
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:backgroundTint="@color/bg_secondary"
+                        android:textColor="@color/white"
+                        android:id="@+id/toggleButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:text="@string/togglebutton" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="300dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="20dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
